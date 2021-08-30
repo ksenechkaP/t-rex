@@ -1,0 +1,35 @@
+.main-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 380rem;
+    height: 190px;
+    justify-content: space-between;
+
+    &-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .formfield {
+
+        &.wide {
+            width: 48%;
+        }
+
+        &.narrow {
+            width: 20%;
+        }
+    }
+
+    .form-label {
+        display: block;
+        font-size: 12rem;
+        margin-bottom: 5rem;
+    }
+
+    .text-input {
+        width: 100%;
+    }
+}
+

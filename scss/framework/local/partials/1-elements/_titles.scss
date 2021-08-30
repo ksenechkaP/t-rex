@@ -1,0 +1,25 @@
+.main-header-title {
+	text-transform: uppercase;
+	font-size: 28rem;
+	text-align: center;
+
+	&-subname {
+		display: block;
+	    text-transform: none;
+	    font-size: 18rem;
+	}
+}
+
+.main-content-title {
+	text-transform: uppercase;
+	font-size: 24rem;
+	border-bottom: solid 1px grey;
+    padding-bottom: 6rem;
+    margin-bottom: 30rem;
+}
+
+.section-header {
+	font-weight: 700;
+	font-size: 16rem;
+	margin-bottom: 16rem;
+}

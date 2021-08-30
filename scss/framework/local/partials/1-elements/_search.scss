@@ -1,0 +1,26 @@
+.common-search{
+  display: flex;
+  background: var(--main-gray);
+  align-items: center;
+  padding: 20rem 15rem;
+  justify-content: space-between;
+
+  .search-field {
+     position: relative;
+     flex: 1;
+     margin-right: 10rem;
+
+    &::before {
+      content:"🔎"; 
+      position:absolute; 
+      right:2px; 
+      top:2px; 
+      filter: grayscale(1) opacity(0.5);
+    }
+  }
+
+  .text-input {
+    padding-right:20px;
+    width: 100%;
+  }
+}

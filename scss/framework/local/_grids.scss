@@ -1,0 +1,30 @@
+.main-grid{ 
+  position:fixed;
+  #{$start-direction}:0; 
+  #{$end-direction}:0; 
+  top:0; 
+  bottom:0;
+  
+  @media #{$break3}{ 
+    display:grid; 
+    grid-template-areas:"main-header main-header"
+                        "main-nav main-nav"
+                        "main-side main"; 
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 70rem 30rem auto;
+  }
+}
+.main-header {
+  grid-area: main-header;
+}
+.main-nav {
+   grid-area: main-nav;
+}
+.main-side{
+  grid-area: main-side;
+  display: grid;
+  grid-template-rows: 70rem auto;
+}
+.main-content{
+  grid-area:main;
+}

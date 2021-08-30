@@ -1,0 +1,22 @@
+[class*=common-button] {
+	/* common styles */
+	display: flex;
+	color: var(--white);
+	background:  var(--black);
+	padding: 5rem 10rem;
+
+	.icon {
+		margin: 0 5rem 0 0; 
+
+		svg {
+			fill: var(--white);
+			height: 17rem;
+		}
+	}
+
+}
+
+/* types */
+.common-button-blue {
+	background: var(--blue);
+}

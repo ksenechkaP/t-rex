@@ -1,0 +1,22 @@
+.dashboard-data-list {
+   width: 260rem;
+   font-size: 12rem;
+   border: solid 1px var(--main-gray);
+
+   .dashboard-data-item {
+       display: flex;
+
+      &-title {
+         background: var(--main-gray);
+         flex: 1;
+         padding: 2rem 4rem;
+         font-weight: 700;
+      }
+
+      &-content {
+         border-bottom: solid 1px var(--main-gray);
+         flex: 1;
+         padding: 4rem 15rem;
+      }
+   }
+}

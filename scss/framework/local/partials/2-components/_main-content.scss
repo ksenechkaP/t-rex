@@ -1,0 +1,18 @@
+.main-content {
+   padding: 30rem 40rem;
+
+   @media #{$break1} {
+      padding: 20rem;
+   }
+
+   .dashboard {
+       display: flex;
+       gap: 20rem;
+       margin-bottom: 25rem;
+       
+       &-item  {
+         padding-right: 20rem;
+         border-right:solid 1px var(--main-gray);
+       }
+   }
+}
