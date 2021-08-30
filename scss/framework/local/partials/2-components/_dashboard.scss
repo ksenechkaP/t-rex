@@ -3,6 +3,10 @@
    font-size: 12rem;
    border: solid 1px var(--main-gray);
 
+   @media #{$break1} {
+      width: 100%;
+   }
+
    .dashboard-data-item {
        display: flex;
 

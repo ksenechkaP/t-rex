@@ -1,4 +1,8 @@
 .results {
    border-right: solid 1px var(--main-gray);
    overflow: auto;
+
+   @media #{$break2}, #{$break1} {
+      display: none;
+   }
 }

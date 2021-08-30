@@ -9,10 +9,18 @@
        display: flex;
        gap: 20rem;
        margin-bottom: 25rem;
-       
+
        &-item  {
          padding-right: 20rem;
          border-right:solid 1px var(--main-gray);
+
+         @media #{$break1} {
+            border-right: none;
+         }
        }
+
+       @media #{$break1} {
+         flex-direction: column;
+      }
    }
 }

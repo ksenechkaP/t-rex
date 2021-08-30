@@ -5,20 +5,36 @@
     height: 190px;
     justify-content: space-between;
 
+     @media #{$break1} {
+        height: auto;
+    }
+
     &-row {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media #{$break1} {
+            display: block;
+        }
     }
 
     .formfield {
 
         &.wide {
             width: 48%;
+
+             @media #{$break1} {
+                width: 100%;
+            }
         }
 
         &.narrow {
             width: 20%;
+
+             @media #{$break1} {
+                width: 100%;
+            }
         }
     }
 
@@ -30,6 +46,9 @@
 
     .text-input {
         width: 100%;
+        border: solid 1px rgba(0,0,0,0.2);
+        padding: 4rem;
+        color: var(--text-blue);
     }
 }
 

@@ -1,6 +1,48 @@
 .main-header {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70rem;
+
+    @media #{$break1}, #{$break2}  {
+        flex-direction: column;
+        gap: 15rem;
+        height: auto;
+        margin-bottom: 30rem;
+    }
+
+    &-title {
+        position: relative;
+        text-transform: uppercase;
+        font-size: 28rem;
+        text-align: center;
+
+        &-subname {
+            display: block;
+            text-transform: none;
+            font-size: 18rem;
+        }
+    }
+
+    &-title-status {
+        position: absolute;
+        font-size: 12rem;
+        right: -80px;
+        top: 7px;
+        background: var(--main-gray);
+        color: white;
+        padding: 2rem 10rem;
+        border-radius: 10px;
+
+
+
+        &.green {
+            background: var(--green);
+        }
+
+         @media #{$break1}, #{$break2}  {
+            position: static;
+         }
+    }
 }
